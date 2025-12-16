@@ -53,7 +53,6 @@ while True:
             color_alerta = 5763719  # Verde
             data = {
                 "username": "CryptoSentinel 🤖",
-                "avatar_url": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
                 "embeds": [
                     {
                         "title": f"¡Oportunidad en {moneda_id.capitalize()}! 📉",
