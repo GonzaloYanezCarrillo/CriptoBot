@@ -48,4 +48,4 @@ while True:
 
             except Exception as e:
                 print(f"Error al obtener el precio: {e}")
-    time.sleep(60)  # Esperar 60 segundos antes de la siguiente consulta
+    time.sleep(300)  # Esperar 300 segundos antes de la siguiente consulta
