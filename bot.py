@@ -1,8 +1,12 @@
 import requests
 import time
 import os
+from keep_alive import keep_alive
 from dotenv import load_dotenv
 load_dotenv()
+print("Cargando CriptoBot...")
+keep_alive()
+print("CriptoBot iniciado y en funcionamiento.")
 url_webhook = os.getenv("DISCORD_WEBHOOK")
 portafolio = [
     {"id": "bitcoin", "objetivo": 90000},
