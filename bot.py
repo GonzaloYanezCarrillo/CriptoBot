@@ -52,7 +52,7 @@ while True:
             # Definir color según la moneda
             color_alerta = 5763719  # Verde
             data = {
-                "username": "CryptoSentinel 🤖",
+                "username": "CryptoGonsalo 🤖",
                 "embeds": [
                     {
                         "title": f"¡Oportunidad en {moneda_id.capitalize()}! 📉",
