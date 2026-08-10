@@ -7,11 +7,12 @@ load_dotenv()
 print("Cargando CriptoBot...")
 url_webhook = os.getenv("DISCORD_WEBHOOK2")
 portafolio = [
-    {"id": "bitcoin", "objetivo": 0},
-    {"id": "ethereum", "objetivo": 0},
-    {"id": "cardano", "objetivo": 0},
-    {"id": "solana", "objetivo": 0},
+    {"id": "bitcoin", "objetivo": 99990},
+    {"id": "ethereum", "objetivo": 99990},
+    {"id": "cardano", "objetivo": 99990},
+    {"id": "solana", "objetivo": 999990},
 ]
+
 
 # Diccionario de Logos (URLs de imágenes para cada moneda)
 logos = {
