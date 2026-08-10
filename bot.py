@@ -5,7 +5,7 @@ from keep_alive import keep_alive
 from dotenv import load_dotenv
 load_dotenv()
 print("Cargando CriptoBot...")
-url_webhook = os.getenv("DISCORD_WEBHOOK")
+url_webhook = os.getenv("DISCORD_WEBHOOK2")
 portafolio = [
     {"id": "bitcoin", "objetivo": 90000},
     {"id": "ethereum", "objetivo": 3000},
@@ -22,7 +22,7 @@ logos = {
 }
 
 if not url_webhook:
-    raise ValueError("La variable de entorno DISCORD_WEBHOOK no está definida.")
+    raise ValueError("La variable de entorno DISCORD_WEBHOOK2 no está definida.")
 
 
 def obtener_precio(id_moneda):
