@@ -7,10 +7,10 @@ load_dotenv()
 print("Cargando CriptoBot...")
 url_webhook = os.getenv("DISCORD_WEBHOOK2")
 portafolio = [
-    {"id": "bitcoin", "objetivo": 90000},
-    {"id": "ethereum", "objetivo": 3000},
-    {"id": "cardano", "objetivo": 3},
-    {"id": "solana", "objetivo": 250},
+    {"id": "bitcoin", "objetivo": 0},
+    {"id": "ethereum", "objetivo": 0},
+    {"id": "cardano", "objetivo": 0},
+    {"id": "solana", "objetivo": 0},
 ]
 
 # Diccionario de Logos (URLs de imágenes para cada moneda)
@@ -52,10 +52,10 @@ while True:
             # Definir color según la moneda
             color_alerta = 5763719  # Verde
             data = {
-                "username": "CryptoGonsalo 🤖",
+                "username": "CryptoGonsalo",
                 "embeds": [
                     {
-                        "title": f"¡Oportunidad en {moneda_id.capitalize()}! 📉",
+                        "title": f"¡Oportunidad en {moneda_id.capitalize()}!",
                         "description": f"El precio ha tocado tu zona de compra.",
                         "color": color_alerta,
                         "thumbnail": {
@@ -63,12 +63,12 @@ while True:
                         },
                         "fields": [
                             {
-                                "name": "💰 Precio Actual",
+                                "name": "Precio Actual",
                                 "value": f"**${precio:,.2f} USD**", # Formato con comas y negrita
                                 "inline": True
                             },
                             {
-                                "name": "🎯 Tu Objetivo",
+                                "name": "Tu Objetivo",
                                 "value": f"${precio_objetivo:,.2f} USD",
                                 "inline": True
                             }
